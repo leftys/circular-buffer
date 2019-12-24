@@ -13,7 +13,7 @@ setup(
 	description = 'Efficient circular buffer implementation in Python with optional Numba JIT compilation',
 	long_description = read('README.md'),
 	author = 'Jan Škoda',
-	author_email = 'skoda at jskoda dot cz',
+	author_email = 'skoda@jskoda.cz',
 	url = 'https://github.com/leftys/circular-buffer',
 	license = 'MIT',
 	extras_require = {
