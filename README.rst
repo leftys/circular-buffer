@@ -1,8 +1,7 @@
 circular-buffer
 ===============
-
-    .. |Tests| image:: https://github.com/leftys/circular-buffer/workflows/Tests/badge.svg
-       :target:
+   
+|Tests| |PyPi|
 
 Efficient circular buffer implementation in Python with optional Numba JIT compilation
 
@@ -24,3 +23,7 @@ Usage
 
 Remember to install `numba` JIT compiler package to get a small extra speedup. `numba` can be 
 automatically installed if you install this package via :code:`pip install circular-buffer[numba]`.
+
+.. |Tests| image:: https://github.com/leftys/circular-buffer/workflows/Tests/badge.svg
+.. |PyPi| image:: https://badge.fury.io/py/circular-buffer.svg
+   :target: https://pypi.python.org/pypi/circular-buffer/
