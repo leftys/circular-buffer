@@ -44,12 +44,12 @@ def for_instances_like(instance_example: Any, warn_if_not_compiled: bool = True)
             self._last_position += 1
             self._last_position %= self.size
             self._buffer[self._last_position] = value
-            if self._last_position == self._first_position:
-                self._first_position += 1
-            self._first_position %= self.size
             self.pushed_count += 1
             if self.pushed_count > self.size:
                 self.pushed_count = self.size
+            if self._last_position == self._first_position and self.pushed_count != 1:
+                self._first_position += 1
+            self._first_position %= self.size
 
         def pop_front(self) -> Any:
             if self.pushed_count == 0:
@@ -106,6 +106,6 @@ def for_instances_like(instance_example: Any, warn_if_not_compiled: bool = True)
             self.size = new_size
 
     if not NUMBA and warn_if_not_compiled:
-        warning.warn('Numba not installed, install it or set warn_if_not_compiled=False to use non-compiled Python version')
+        warnings.warn('Numba not installed, install it or set warn_if_not_compiled=False to use non-compiled Python version')
     return CircularBuffer
 
