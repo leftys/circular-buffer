@@ -11,7 +11,7 @@ setup(
 	name = 'circular-buffer',
 	version = read('version.txt').strip(),
 	description = 'Efficient circular buffer implementation in Python with optional Numba JIT compilation',
-	long_description = read('README.md'),
+	long_description = read('README.rst'),
 	author = 'Jan Škoda',
 	author_email = 'skoda@jskoda.cz',
 	url = 'https://github.com/leftys/circular-buffer',
