@@ -19,4 +19,5 @@ Usage
     assert buf.front() == 1
     assert buf.back() == 11
 
-Remember to install `numba` JIT compiler package to get a significant speedup.
+Remember to install `numba` JIT compiler package to get a small extra speedup. `numba` can be 
+automatically installed if you install this package via :code:`pip install circular-buffer[numba]`.

@@ -11,7 +11,7 @@ except ImportError:
 
 
  
-def for_instances_like(instance_example: Any, warn_if_not_compiled: bool = True) -> 'CircularBuffer':
+def for_instances_like(instance_example: Any, warn_if_not_compiled: bool = False) -> 'CircularBuffer':
     @jitclass([
         ('_buffer', types.Array(typeof(instance_example), ndim = 1, layout = 'C')),
         ('_first_position', types.int64),
