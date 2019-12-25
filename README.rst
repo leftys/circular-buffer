@@ -1,6 +1,9 @@
 circular-buffer
 ===============
 
+    .. |Tests| image:: https://github.com/leftys/circular-buffer/workflows/Tests/badge.svg
+       :target:
+
 Efficient circular buffer implementation in Python with optional Numba JIT compilation
 
 
